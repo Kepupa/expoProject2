@@ -1,4 +1,3 @@
-// App.js
 import React, { useState } from 'react';
 import { View, FlatList, RefreshControl } from 'react-native';
 import LanguageItem from './language';
@@ -9,7 +8,6 @@ export default function App() {
 
   const onRefresh = () => {
     setRefreshing(true);
-    // Можете добавить логику для обновления данных
     setTimeout(() => setRefreshing(false), 1000);
   };
 
